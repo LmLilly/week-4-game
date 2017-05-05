@@ -4,7 +4,7 @@
 	<title>Crystals Collector Game</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
@@ -43,23 +43,36 @@
 
 	<div class="row">
 
-		<div class="crystal col-md-1">1</div>
-		<div class="crystal col-md-1">2</div>
-		<div class="crystal col-md-1">3</div>
-		<div class="crystal col-md-1">4</div>
-	</div>			
+		<div class="crystal col-md-2" id="crystal1" data-location="0">
+			<img src="assets/images/greenGem.jpg">
+		</div>
+		<div class="crystal col-md-2" id="crystal2" data-location="1">
+			<img src="assets/images/pinkGem.jpg">
+		</div>
+		<div class="crystal col-md-2" id="crystal3" data-location="2">
+			<img src="assets/images/blueGem.jpg">
+		</div>
+		<div class="crystal col-md-2" id="crystal4" data-location="3">
+			<img src="assets/images/redGem.jpg">
+		</div>
+	</div>
+
 	<div class="row">
+
 			<div class="col-sm-3">
 				<div class="totalScore">Your Total Score</div>
 			</div>
 	</div>
-	<div class="row">
-		<div class="col-sm-3">
-			<div class="score">Score</div>
-		</div>
-		
-<script type="text/javascript" src="assets/javascript/game.js"></script>
 
+	<div class="row">
+	
+		<div class="col-sm-3">
+			<div class="score"></div>
+		</div>
 	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 </html>
